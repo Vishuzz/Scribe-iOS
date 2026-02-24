@@ -1826,7 +1826,6 @@ class KeyboardViewController: UIInputViewController {
       } else if commandState == .conjugate {
         let conjugationTblTriggered = triggerVerbConjugation(commandBar: commandBar)
         if conjugationTblTriggered {
-        //   loadKeys() // go to conjugation view
           commandState = .dynamicConjugation
           showDynamicConjugationView(verb: verbToConjugate)
           return
