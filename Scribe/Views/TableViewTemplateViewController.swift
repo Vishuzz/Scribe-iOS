@@ -4,6 +4,7 @@
  * Controls the table views within the app.
  */
 
+import SwiftUI
 import UIKit
 
 final class TableViewTemplateViewController: BaseTableViewController {
@@ -164,22 +165,22 @@ extension TableViewTemplateViewController {
         let section = tableSection.section[indexPath.row]
 
         if section.sectionState == .translateLang {
-            if let viewController = storyboard?.instantiateViewController(
-                identifier: "SelectionViewTemplateViewController"
-            ) as? SelectionViewTemplateViewController {
-                var data = SettingsTableData.translateLangSettingsData
+            var data = SettingsTableData.translateLangSettingsData
 
-                // Removes keyboard language from possible translation languages.
-                let langCodeIndex =
-                    SettingsTableData.translateLangSettingsData[0].section.firstIndex(where: { s in
-                        s.sectionState == .specificLang(langCode)
-                    }) ?? -1
-                data[0].section.remove(at: langCodeIndex)
+            // Removes keyboard language from possible translation languages.
+            let langCodeIndex =
+                SettingsTableData.translateLangSettingsData[0].section.firstIndex(where: { s in
+                    s.sectionState == .specificLang(langCode)
+                }) ?? -1
+            data[0].section.remove(at: langCodeIndex)
 
-                viewController.configureTable(for: data, parentSection: section, langCode: langCode)
+            let hostingController = UIHostingController(
+                rootView: TranslationLanguagePickerView(
+                    tableData: data, parentSection: section, langCode: langCode
+                )
+            )
 
-                navigationController?.pushViewController(viewController, animated: true)
-            }
+            navigationController?.pushViewController(hostingController, animated: true)
         }
     }
 }
