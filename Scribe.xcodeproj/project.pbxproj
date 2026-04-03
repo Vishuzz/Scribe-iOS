@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		140158992A430DD000D14E52 /* ThirdPartyLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140158982A430DD000D14E52 /* ThirdPartyLicense.swift */; };
 		1401589B2A45A07200D14E52 /* WikimediaAndScribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401589A2A45A07200D14E52 /* WikimediaAndScribe.swift */; };
-		140158A22A4EDB2200D14E52 /* TableViewTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140158A12A4EDB2200D14E52 /* TableViewTemplateViewController.swift */; };
 		1406B7872A2DFCDD001DF45B /* AboutTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1406B7862A2DFCDD001DF45B /* AboutTableData.swift */; };
 		1406B78C2A3209CF001DF45B /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1406B78B2A3209CF001DF45B /* AppExtensions.swift */; };
 		146B70BD2A853A3800710BD4 /* SwipeableTabBarController in Frameworks */ = {isa = PBXBuildFile; productRef = 146B70BC2A853A3800710BD4 /* SwipeableTabBarController */; };
@@ -128,6 +127,7 @@
 		69B81EBC2BFB8C77008CAB85 /* TipCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B81EBB2BFB8C77008CAB85 /* TipCardView.swift */; };
 		84AF4D882C3575EA009AE0D2 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF4D872C3575EA009AE0D2 /* UIDeviceExtensions.swift */; };
 		8B82A46F2F7D6E0400F1B04D /* TranslationLanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B82A46E2F7D6E0300F1B04D /* TranslationLanguagePickerView.swift */; };
+		8BA036E22F7FCA2D00F5ADF9 /* LanguageSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA036E12F7FCA2D00F5ADF9 /* LanguageSettingsView.swift */; };
 		CE1378C428F5D7AC00E1CBC2 /* ScribeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1378C228F5D7AC00E1CBC2 /* ScribeColor.swift */; };
 		CE1378C528F5D7AC00E1CBC2 /* ScribeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1378C228F5D7AC00E1CBC2 /* ScribeColor.swift */; };
 		CE1378C628F5D7AC00E1CBC2 /* ScribeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1378C228F5D7AC00E1CBC2 /* ScribeColor.swift */; };
@@ -1007,7 +1007,6 @@
 /* Begin PBXFileReference section */
 		140158982A430DD000D14E52 /* ThirdPartyLicense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyLicense.swift; sourceTree = "<group>"; };
 		1401589A2A45A07200D14E52 /* WikimediaAndScribe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikimediaAndScribe.swift; sourceTree = "<group>"; };
-		140158A12A4EDB2200D14E52 /* TableViewTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTemplateViewController.swift; sourceTree = "<group>"; };
 		1406B7862A2DFCDD001DF45B /* AboutTableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableData.swift; sourceTree = "<group>"; };
 		1406B78B2A3209CF001DF45B /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
 		144B56F22A568AC200C2F447 /* Scribe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scribe.entitlements; sourceTree = "<group>"; };
@@ -1043,6 +1042,7 @@
 		69B81EBB2BFB8C77008CAB85 /* TipCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCardView.swift; sourceTree = "<group>"; };
 		84AF4D872C3575EA009AE0D2 /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		8B82A46E2F7D6E0300F1B04D /* TranslationLanguagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationLanguagePickerView.swift; sourceTree = "<group>"; };
+		8BA036E12F7FCA2D00F5ADF9 /* LanguageSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettingsView.swift; sourceTree = "<group>"; };
 		CE1378C228F5D7AC00E1CBC2 /* ScribeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScribeColor.swift; sourceTree = "<group>"; };
 		CE1378C328F5D7AC00E1CBC2 /* UIColor+ScribeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ScribeColors.swift"; sourceTree = "<group>"; };
 		D109A20B275B6888005E2271 /* French.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = French.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2011,10 +2011,10 @@
 		EDB4601F2B03B3B400BEA967 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8BA036E12F7FCA2D00F5ADF9 /* LanguageSettingsView.swift */,
 				5A68DA442CDE7D2900897FAD /* Cells */,
 				EDB460202B03B3E400BEA967 /* BaseTableViewController.swift */,
 				8B82A46E2F7D6E0300F1B04D /* TranslationLanguagePickerView.swift */,
-				140158A12A4EDB2200D14E52 /* TableViewTemplateViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2889,12 +2889,12 @@
 				198369CC2C7980BA00C1B583 /* KeyboardProvider.swift in Sources */,
 				CE1378CC28F5D7AC00E1CBC2 /* UIColor+ScribeColors.swift in Sources */,
 				D17193F027AECB350038660B /* SVInterfaceVariables.swift in Sources */,
-				140158A22A4EDB2200D14E52 /* TableViewTemplateViewController.swift in Sources */,
 				38BD213422D5907F00C6795D /* AppDelegate.swift in Sources */,
 				30489C1E2936DAB700B59393 /* ToolTipView.swift in Sources */,
 				3045396F293B9DF2003AE55B /* ToolTipViewTheme.swift in Sources */,
 				E9F7273E2F45A6DE0060B92D /* LanguageDataService.swift in Sources */,
 				D1F0367327AAE1B400CD7921 /* CommandVariables.swift in Sources */,
+				8BA036E22F7FCA2D00F5ADF9 /* LanguageSettingsView.swift in Sources */,
 				E9CE5EA82F063E230068A930 /* DownloadDataScreen.swift in Sources */,
 				D16DD3A529E78A1500FB9022 /* Utilities.swift in Sources */,
 				EDB460212B03B3E400BEA967 /* BaseTableViewController.swift in Sources */,
@@ -3896,7 +3896,7 @@
 				DEVELOPMENT_TEAM = ATJ9U3WZ27;
 				INFOPLIST_FILE = "$(SRCROOT)/Scribe/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3924,7 +3924,7 @@
 				DEVELOPMENT_TEAM = ATJ9U3WZ27;
 				INFOPLIST_FILE = "$(SRCROOT)/Scribe/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
