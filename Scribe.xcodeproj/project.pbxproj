@@ -128,6 +128,7 @@
 		84AF4D882C3575EA009AE0D2 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF4D872C3575EA009AE0D2 /* UIDeviceExtensions.swift */; };
 		8B82A46F2F7D6E0400F1B04D /* TranslationLanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B82A46E2F7D6E0300F1B04D /* TranslationLanguagePickerView.swift */; };
 		8BA036E22F7FCA2D00F5ADF9 /* LanguageSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA036E12F7FCA2D00F5ADF9 /* LanguageSettingsView.swift */; };
+		8BA036E42F7FCDC300F5ADF9 /* SettingsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA036E32F7FCDC300F5ADF9 /* SettingsHomeView.swift */; };
 		CE1378C428F5D7AC00E1CBC2 /* ScribeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1378C228F5D7AC00E1CBC2 /* ScribeColor.swift */; };
 		CE1378C528F5D7AC00E1CBC2 /* ScribeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1378C228F5D7AC00E1CBC2 /* ScribeColor.swift */; };
 		CE1378C628F5D7AC00E1CBC2 /* ScribeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1378C228F5D7AC00E1CBC2 /* ScribeColor.swift */; };
@@ -1043,6 +1044,7 @@
 		84AF4D872C3575EA009AE0D2 /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		8B82A46E2F7D6E0300F1B04D /* TranslationLanguagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationLanguagePickerView.swift; sourceTree = "<group>"; };
 		8BA036E12F7FCA2D00F5ADF9 /* LanguageSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettingsView.swift; sourceTree = "<group>"; };
+		8BA036E32F7FCDC300F5ADF9 /* SettingsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHomeView.swift; sourceTree = "<group>"; };
 		CE1378C228F5D7AC00E1CBC2 /* ScribeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScribeColor.swift; sourceTree = "<group>"; };
 		CE1378C328F5D7AC00E1CBC2 /* UIColor+ScribeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ScribeColors.swift"; sourceTree = "<group>"; };
 		D109A20B275B6888005E2271 /* French.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = French.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2011,6 +2013,7 @@
 		EDB4601F2B03B3B400BEA967 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8BA036E32F7FCDC300F5ADF9 /* SettingsHomeView.swift */,
 				8BA036E12F7FCA2D00F5ADF9 /* LanguageSettingsView.swift */,
 				5A68DA442CDE7D2900897FAD /* Cells */,
 				EDB460202B03B3E400BEA967 /* BaseTableViewController.swift */,
@@ -2860,6 +2863,7 @@
 				D17193C027AEA33A0038660B /* AppTextStyling.swift in Sources */,
 				CE1378C428F5D7AC00E1CBC2 /* ScribeColor.swift in Sources */,
 				D171946527AF31770038660B /* Conjugate.swift in Sources */,
+				8BA036E42F7FCDC300F5ADF9 /* SettingsHomeView.swift in Sources */,
 				147797B52A2CFB490044A53E /* SettingsViewController.swift in Sources */,
 				1406B7872A2DFCDD001DF45B /* AboutTableData.swift in Sources */,
 				8B82A46F2F7D6E0400F1B04D /* TranslationLanguagePickerView.swift in Sources */,
